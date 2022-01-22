@@ -5,6 +5,7 @@ Caesar's cipher shifts each letter by a number of letters. If the shift takes yo
  the end of the alphabet, just rotate back to the front of the alphabet. 
 In the case of a rotation by 3, w, x, y, and z would map to z, a, b and c. */
 
+//used https://gist.github.com/mveteanu/7195798f339339e7358dca4ef911532b for guidance
 // Function will implement Caesar Cipher to
 // encrypt / decrypt the msg by shifting the letters
 // of the message acording to the key
@@ -32,11 +33,11 @@ function encryptMessage(originalMsg, key)
             code += 65;
         }
 
-        
+        //add newly encrypted characters to the encrptdMessage 
         encrptdMessage += String.fromCharCode(code);
     }
 
-    return encMsg;
+    return encrptdMessage;
 }
 
 
